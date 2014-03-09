@@ -1,0 +1,14 @@
+--TEST--
+"sqr" filter
+--TEMPLATE--
+{{ 1|sqr }}
+{{ number|sqr }}
+{{ 1.1|sqr }}
+{{ (-6)|sqr }}
+--DATA--
+return array('number' => -5)
+--EXPECT--
+1
+25
+1.21
+36
